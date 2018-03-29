@@ -31,27 +31,21 @@ export const filterResponses = (requestId) => {
     return browser.webRequest.filterResponseData(requestId);
 };
 
-export const onBeforeWebRequest = (callback, ...args) => {
-    return browser.webRequest.onBeforeRequest.addListener(callback, ...args);
+export const onBeforeWebRequest = (callback, filter, extraInfo) => {
+    return browser.webRequest.onBeforeRequest.addListener(callback, filter, extraInfo);
 };
 
-export const download = (options) => {
-    return browser.downloads.download({
-        ...options,
-        saveAs: false
-    });
+export const download = (url, filename) => {
+    return browser.downloads.download({ url, filename, saveAs: false });
 };
 
-export const getDownloadStatus = async (id) => {
+export const getDownloadState = async (id) => {
     const status = await browser.downloads.search({ id });
-    if (!status instanceof Array) {
+    try {
+        return status[0].state;
+    } catch (e) {
         return undefined;
     }
-    return status[0].state;
-};
-
-export const cancelDownload = (id) => {
-    return browser.downloads.cancel(id);
 };
 
 export const reloadCurrentTab = () => {

@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { download } from '../browser';
+import { download, getDownloadState } from '../browser';
 import { InputStorage } from './storage';
 
 
@@ -18,6 +18,27 @@ function *genDownloads({ data, form, machine_name }) {
     }
 }
 
+function sleep(s) {
+    return new Promise(resolve => setTimeout(resolve, s * 1000));
+}
+
+function pollDownloadState(id) {
+    return new Promise(async (resolve) => {
+        while (true) {
+            const state = await getDownloadState(id);
+            if (state === "complete") {
+                resolve(true);
+                break;
+            } else if (state === "interrupted") {
+                resolve(false);
+                break;
+            } else {
+                await sleep(1);
+            }
+        }
+    });
+}
+
 export async function handleDownload({ payload }) {
     const downloads = [...genDownloads(payload)];
 
@@ -26,7 +47,9 @@ export async function handleDownload({ payload }) {
             if (process.env.NODE_ENV !== 'production') {
                 url = `http://localhost:5000/humbundlr/file/${filename}`;
             }
-            download({ url, filename });
+            console.log(url);
+            const id = await download(url, filename);
+            await pollDownloadState(id);
         } catch (e) {
             console.error(e.message);
         }
