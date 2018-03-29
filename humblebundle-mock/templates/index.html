@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      @keyframes spin {
+      0% {
+      transform: rotate(0deg);
+      }
+      100% {
+      transform: rotate(360deg);
+      }
+      }
+      @keyframes move {
+      0%, 100% {
+      transform: translate(0px, 0px);
+      }
+      20%, 60% {
+      transform: translate(20px, -20px);
+      }
+      40%, 80% {
+      transform: translate(-20px, 20px);
+      }
+      }
+      #circle {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 20px solid;
+      border-top-color: red;
+      border-bottom-color: yellow;
+      border-right-color: green;
+      border-left-color: orange;
+      background: blue;
+      animation: spin 10s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">HumbleBundle Mock</h1>
+    <div>
+      <div id="circle"></div>
+    </div>
+    <script>
+      fetch('http://localhost:5000/humbundlr/api')
+      .then(function(resp) { return resp.json(); })
+      .then(function(data) { console.log(data);  });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "humbundlr",
+    "version": "0.1",
+    "description": "An extension for downloading items from humblebundle.",
+    "page_action": {
+        "browser_style": false,
+        "default_title": "Humbundlr",
+        "show_matches": [
+            "*://localhost/humbundlr/downloads*",
+            "*://humblebundle.com/downloads*",
+            "*://www.humblebundle.com/downloads*"
+        ]
+    },
+    "permissions": [
+        "downloads",
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "*://localhost/humbundlr/downloads*",
+        "*://humblebundle.com/downloads*",
+        "*://www.humblebundle.com/downloads*"
+    ]
+}

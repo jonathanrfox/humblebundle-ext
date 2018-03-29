@@ -1,0 +1,29 @@
+/* pacifico-regular - latin */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+       url('./pacifico-v12-latin-regular.woff2') format('woff2'),
+       url('./pacifico-v12-latin-regular.woff') format('woff');
+}
+
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url('./source-sans-pro-v11-latin-700.woff2') format('woff2'),
+       url('./source-sans-pro-v11-latin-700.woff') format('woff');
+}
+
+/* source-sans-pro-900 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'),
+       url('./source-sans-pro-v11-latin-900.woff2') format('woff2'),
+       url('./source-sans-pro-v11-latin-900.woff') format('woff');
+}

@@ -1,0 +1,581 @@
+{
+    "bundlename": "pythonbypackt_bookbundle",
+    "platforms": {
+        "video": [
+            {
+                "meta": [
+                    {
+                        "format": "zip",
+                        "totalFileSize": 3492859133,
+                        "id": "3107da8a-9e21-46a9-9b74-1464d9938574"
+                    }
+                ],
+                "products": [
+                    {
+                        "fileSize": 991322180,
+                        "md5": "074b32a5e40147efce684e0e39997432",
+                        "url": "https:\/\/dl.humble.com\/beginningpython_video.zip?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=3685edb666f32170d9b3963067bc4c3b",
+                        "platform": "video",
+                        "format": "zip",
+                        "name": "beginningpython_video",
+                        "fileName": "beginningpython_video.zip"
+                    },
+                    {
+                        "fileSize": 388588830,
+                        "md5": "dea9d8788d3d9e62ae8c40f601de2309",
+                        "url": "https:\/\/dl.humble.com\/learningpythonwebpenetrationtesting_video.zip?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=45390cd2fdf026c62c40d2d016b4e041",
+                        "platform": "video",
+                        "format": "zip",
+                        "name": "learningpythonwebpenetrationtesting_video",
+                        "fileName": "learningpythonwebpenetrationtesting_video.zip"
+                    },
+                    {
+                        "fileSize": 383862717,
+                        "md5": "a4e7cc9103e485d30d97c029fed33b7b",
+                        "url": "https:\/\/dl.humble.com\/deeplearningwithpython_video_updated.zip?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=b83ac5388144a2bf91cd8c870a02f2ef",
+                        "platform": "video",
+                        "format": "zip",
+                        "name": "deeplearningwithpython_video",
+                        "fileName": "deeplearningwithpython_video.zip"
+                    },
+                    {
+                        "fileSize": 608143140,
+                        "md5": "157d3198f171e532b854770095db0a52",
+                        "url": "https:\/\/dl.humble.com\/pythonmachinelearningprojects_video.zip?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=e63810182a4e73dc068d2367bb8ed537",
+                        "platform": "video",
+                        "format": "zip",
+                        "name": "pythonmachinelearningprojects_video",
+                        "fileName": "pythonmachinelearningprojects_video.zip"
+                    },
+                    {
+                        "fileSize": 425864766,
+                        "md5": "31191899107dac5670ee2b9045833f51",
+                        "url": "https:\/\/dl.humble.com\/pythondesignpatterns_video_updated.zip?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=9b2fe93a007503223d6333d3ee20a320",
+                        "platform": "video",
+                        "format": "zip",
+                        "name": "pythondesignpatterns_video",
+                        "fileName": "pythondesignpatterns_video.zip"
+                    },
+                    {
+                        "fileSize": 695077500,
+                        "md5": "e6542bb7f81f5688d91fc7fbe7686745",
+                        "url": "https:\/\/dl.humble.com\/masteringpython_video.zip?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=012af3e6cca504e09645fa5231973c0c",
+                        "platform": "video",
+                        "format": "zip",
+                        "name": "masteringpython_video",
+                        "fileName": "masteringpython_video.zip"
+                    }
+                ]
+            }
+        ],
+        "ebook": [
+            {
+                "meta": [
+                    {
+                        "format": "epub",
+                        "totalFileSize": 238308005,
+                        "id": "745c8a1b-d8e0-4e64-b320-0326a99c6c05"
+                    },
+                    {
+                        "format": "mobi",
+                        "totalFileSize": 453860243,
+                        "id": "dbcc83c4-1af8-40c5-9893-ae216640def3"
+                    },
+                    {
+                        "format": "pdf",
+                        "totalFileSize": 238509497,
+                        "id": "219f6e09-6d34-43b5-b4bd-20f8d174a4c1"
+                    }
+                ],
+                "products": [
+                    {
+                        "fileSize": 33606194,
+                        "md5": "2b48bedb2d14af83b894a11324485f47",
+                        "url": "https:\/\/dl.humble.com\/pythondataanalysiscookbook.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=b4b3a3c6cae154468682ea027a44ba01",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "pythondataanalysiscookbook",
+                        "fileName": "pythondataanalysiscookbook.mobi"
+                    },
+                    {
+                        "fileSize": 22844721,
+                        "md5": "fd995371fe44b4d6cfc61632de15e94e",
+                        "url": "https:\/\/dl.humble.com\/pythondataanalysiscookbook.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=58f40270a30a2af6d8ef4c62ead96255",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "pythondataanalysiscookbook",
+                        "fileName": "pythondataanalysiscookbook.epub"
+                    },
+                    {
+                        "fileSize": 10276828,
+                        "md5": "c29257807a16e0c662986b19b6123f6b",
+                        "url": "https:\/\/dl.humble.com\/pythondataanalysiscookbook.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=fc52a4b23b2a0008177beee0701c6992",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "pythondataanalysiscookbook",
+                        "fileName": "pythondataanalysiscookbook.pdf"
+                    },
+                    {
+                        "fileSize": 5645331,
+                        "md5": "e2c9d5d2cfe4f39d2448bf8d9112a9e3",
+                        "url": "https:\/\/dl.humble.com\/masteringpython.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=480a9cd5775303eaac5e532ffaab7c54",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "masteringpython",
+                        "fileName": "masteringpython.mobi"
+                    },
+                    {
+                        "fileSize": 3145694,
+                        "md5": "0c1d5cfd247b66fb39efbb0e0e19e5f9",
+                        "url": "https:\/\/dl.humble.com\/masteringpython.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=20fdfaaefbb4f96ec2a93e4d8d749672",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "masteringpython",
+                        "fileName": "masteringpython.epub"
+                    },
+                    {
+                        "fileSize": 4631212,
+                        "md5": "9b6a721c2f00e19197a7be092790ed1c",
+                        "url": "https:\/\/dl.humble.com\/masteringpython.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=66ff38d982ed4f3b88d73df867d90724",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "masteringpython",
+                        "fileName": "masteringpython.pdf"
+                    },
+                    {
+                        "fileSize": 22004814,
+                        "md5": "6c4d93cef571201bfe9e1c03276f5f90",
+                        "url": "https:\/\/dl.humble.com\/learningroboticsusingpython.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=47f62784a4e647572c9aa15003f731e7",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "learningroboticsusingpython",
+                        "fileName": "learningroboticsusingpython.mobi"
+                    },
+                    {
+                        "fileSize": 15336297,
+                        "md5": "2134638be4b1001d164a7cfe064ca573",
+                        "url": "https:\/\/dl.humble.com\/learningroboticsusingpython.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=acf5a4eb25dbc35b465610fd323bf08d",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "learningroboticsusingpython",
+                        "fileName": "learningroboticsusingpython.epub"
+                    },
+                    {
+                        "fileSize": 8051444,
+                        "md5": "713054d7dc0aa115d6865b583810a8d0",
+                        "url": "https:\/\/dl.humble.com\/learningroboticsusingpython.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=3e08ea99071b0efa2a092920aec4f823",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "learningroboticsusingpython",
+                        "fileName": "learningroboticsusingpython.pdf"
+                    },
+                    {
+                        "fileSize": 98236822,
+                        "md5": "1ec81b0f8a079e112d37bcc9803c14ef",
+                        "url": "https:\/\/dl.humble.com\/pythonprogrammingwithraspberrypi.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=261c10f698085a508272b16cdc0ab8eb",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "pythonprogrammingwithraspberrypi",
+                        "fileName": "pythonprogrammingwithraspberrypi.mobi"
+                    },
+                    {
+                        "fileSize": 62188288,
+                        "md5": "e8fad8f4435a28a0309e888e8242f8ff",
+                        "url": "https:\/\/dl.humble.com\/pythonprogrammingwithraspberrypi.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=4154e86fb3ea0ebcc55a3b35e57e04de",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "pythonprogrammingwithraspberrypi",
+                        "fileName": "pythonprogrammingwithraspberrypi.epub"
+                    },
+                    {
+                        "fileSize": 55493091,
+                        "md5": "ccd5a2ba3cb2badba1ccc95913d2e59a",
+                        "url": "https:\/\/dl.humble.com\/pythonprogrammingwithraspberrypi.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=4c1ba9984554af6658c1f15b6d5f14a6",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "pythonprogrammingwithraspberrypi",
+                        "fileName": "pythonprogrammingwithraspberrypi.pdf"
+                    },
+                    {
+                        "fileSize": 12704849,
+                        "md5": "8c7fb24a8b34e981f1a8f4ef0b95122c",
+                        "url": "https:\/\/dl.humble.com\/webdevelopmentwithdjangocookbook.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=a1e9002387332788d6602b556ad4343e",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "webdevelopmentwithdjangocookbook",
+                        "fileName": "webdevelopmentwithdjangocookbook.mobi"
+                    },
+                    {
+                        "fileSize": 8498492,
+                        "md5": "1149b1ad6dd971ce0dadacd177c16173",
+                        "url": "https:\/\/dl.humble.com\/webdevelopmentwithdjangocookbook.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=db63469f915fee2223ee1cf3dc6cae39",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "webdevelopmentwithdjangocookbook",
+                        "fileName": "webdevelopmentwithdjangocookbook.epub"
+                    },
+                    {
+                        "fileSize": 4248712,
+                        "md5": "b13fb18441dda5519a7fd8f5196dabf8",
+                        "url": "https:\/\/dl.humble.com\/webdevelopmentwithdjangocookbook.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=73b95305033a7348b84c23e07d897f29",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "webdevelopmentwithdjangocookbook",
+                        "fileName": "webdevelopmentwithdjangocookbook.pdf"
+                    },
+                    {
+                        "fileSize": 6789048,
+                        "md5": "7e112da286964d4b626f5007e13a543c",
+                        "url": "https:\/\/dl.humble.com\/expertpythonprogramming.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=3fff8da86a5c44946ac0d1a0d94b5a26",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "expertpythonprogramming",
+                        "fileName": "expertpythonprogramming.mobi"
+                    },
+                    {
+                        "fileSize": 3635402,
+                        "md5": "dce8bc9a5c40f7648f7c8da2ebb8e46b",
+                        "url": "https:\/\/dl.humble.com\/expertpythonprogramming.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=b97ff97e3ae7681db057d7d808ea8a1f",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "expertpythonprogramming",
+                        "fileName": "expertpythonprogramming.epub"
+                    },
+                    {
+                        "fileSize": 4282982,
+                        "md5": "f46644ebb1b45f11a94fcac3bb53d379",
+                        "url": "https:\/\/dl.humble.com\/expertpythonprogramming.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=dfa0c4abf4721fee80a1a8d6240cf183",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "expertpythonprogramming",
+                        "fileName": "expertpythonprogramming.pdf"
+                    },
+                    {
+                        "fileSize": 9276863,
+                        "md5": "b913c4939d8832e9ac265cb9e5ce56e2",
+                        "url": "https:\/\/dl.humble.com\/pythondatascienceessentials.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=443a8f8bd7c90efcebdec44b893d0b01",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "pythondatascienceessentials",
+                        "fileName": "pythondatascienceessentials.mobi"
+                    },
+                    {
+                        "fileSize": 3834959,
+                        "md5": "afcb1f2a2bd14df9f547ad600b5fa0fb",
+                        "url": "https:\/\/dl.humble.com\/pythondatascienceessentials.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=87afa313009d08568db58b35515af1b3",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "pythondatascienceessentials",
+                        "fileName": "pythondatascienceessentials.epub"
+                    },
+                    {
+                        "fileSize": 5865102,
+                        "md5": "4c03a17585b823c5368834866c67142f",
+                        "url": "https:\/\/dl.humble.com\/pythondatascienceessentials.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=e9d59e92c785f62c78fed5ebd5d0431e",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "pythondatascienceessentials",
+                        "fileName": "pythondatascienceessentials.pdf"
+                    },
+                    {
+                        "fileSize": 7511908,
+                        "md5": "771e9c1c75c124b9f8f51557e6807107",
+                        "url": "https:\/\/dl.humble.com\/learningconcurrencyinpython.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=482994692783969fdea47c4a1b223aa8",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "learningconcurrencyinpython",
+                        "fileName": "learningconcurrencyinpython.mobi"
+                    },
+                    {
+                        "fileSize": 3718519,
+                        "md5": "3688fa3d5497d2cf06fafde161938bee",
+                        "url": "https:\/\/dl.humble.com\/learningconcurrencyinpython.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=c1601448f800e885eea8904e29e858e1",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "learningconcurrencyinpython",
+                        "fileName": "learningconcurrencyinpython.epub"
+                    },
+                    {
+                        "fileSize": 6766914,
+                        "md5": "9344422b3ac1a36a6e48224866db3125",
+                        "url": "https:\/\/dl.humble.com\/learningconcurrencyinpython.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=1cda70ffb189f18b0716c80820fdc174",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "learningconcurrencyinpython",
+                        "fileName": "learningconcurrencyinpython.pdf"
+                    },
+                    {
+                        "fileSize": 17786666,
+                        "md5": "4b7ab6446c1062a4782c534960976fbc",
+                        "url": "https:\/\/dl.humble.com\/pythondatastructuresandalgorithms.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=740f92fb42f58dedfc9dd2f31ccee566",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "pythondatastructuresandalgorithms",
+                        "fileName": "pythondatastructuresandalgorithms.mobi"
+                    },
+                    {
+                        "fileSize": 9359566,
+                        "md5": "c3fd3d7e153a974ab149a02940582150",
+                        "url": "https:\/\/dl.humble.com\/pythondatastructuresandalgorithms.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=e9ac065d96d1402d3b3d47d0304a8d0f",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "pythondatastructuresandalgorithms",
+                        "fileName": "pythondatastructuresandalgorithms.epub"
+                    },
+                    {
+                        "fileSize": 12071656,
+                        "md5": "3dc75a62a2e67914d4ddda8356f68bc1",
+                        "url": "https:\/\/dl.humble.com\/pythondatastructuresandalgorithms.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=414f34861de30add5fd3ec3da7b05fb3",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "pythondatastructuresandalgorithms",
+                        "fileName": "pythondatastructuresandalgorithms.pdf"
+                    },
+                    {
+                        "fileSize": 19974454,
+                        "md5": "be67e361b24be8a0ff83b38eb83b8857",
+                        "url": "https:\/\/dl.humble.com\/buildingrestfulpythonwebservices.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=8f3ac6920a9c83c3d64a7ab09bce13e3",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "buildingrestfulpythonwebservices",
+                        "fileName": "buildingrestfulpythonwebservices.mobi"
+                    },
+                    {
+                        "fileSize": 8081266,
+                        "md5": "25d17510a17056a50e8a6a16c679c346",
+                        "url": "https:\/\/dl.humble.com\/buildingrestfulpythonwebservices.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=7294b365662535c321a8b068c031f065",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "buildingrestfulpythonwebservices",
+                        "fileName": "buildingrestfulpythonwebservices.epub"
+                    },
+                    {
+                        "fileSize": 10231850,
+                        "md5": "c1f6c384137fabd0ece8973e074c53f8",
+                        "url": "https:\/\/dl.humble.com\/buildingrestfulpythonwebservices.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=70a109059760121de0eb4de4af1e107a",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "buildingrestfulpythonwebservices",
+                        "fileName": "buildingrestfulpythonwebservices.pdf"
+                    },
+                    {
+                        "fileSize": 29904698,
+                        "md5": "76e18e55671172460bfd3888389a7e72",
+                        "url": "https:\/\/dl.humble.com\/masteringpythonnetworking.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=3e50716c53a784c24d5cc58dbae72416",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "masteringpythonnetworking",
+                        "fileName": "masteringpythonnetworking.mobi"
+                    },
+                    {
+                        "fileSize": 12268517,
+                        "md5": "da43b45c1a3f00af8c4cb92b49db24f5",
+                        "url": "https:\/\/dl.humble.com\/masteringpythonnetworking.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=071bd264a2436e7497e1987fec8f849e",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "masteringpythonnetworking",
+                        "fileName": "masteringpythonnetworking.epub"
+                    },
+                    {
+                        "fileSize": 18718064,
+                        "md5": "4b61912639284a958b43325f93c7853c",
+                        "url": "https:\/\/dl.humble.com\/masteringpythonnetworking.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=acd762eaf96d417f83d01f8cf1e2c25d",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "masteringpythonnetworking",
+                        "fileName": "masteringpythonnetworking.pdf"
+                    },
+                    {
+                        "fileSize": 87614108,
+                        "md5": "a3263d7289891da7ab643a09c03f9310",
+                        "url": "https:\/\/dl.humble.com\/artificialintelligencewithpython.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=163da351b583b21868d84e4534c0931a",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "artificialintelligencewithpython",
+                        "fileName": "artificialintelligencewithpython.mobi"
+                    },
+                    {
+                        "fileSize": 28179260,
+                        "md5": "72d0131cbbe7fb6090c274da3cce472f",
+                        "url": "https:\/\/dl.humble.com\/artificialintelligencewithpython.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=4c94b50ec545394f3c2a754115154d4e",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "artificialintelligencewithpython",
+                        "fileName": "artificialintelligencewithpython.epub"
+                    },
+                    {
+                        "fileSize": 33296983,
+                        "md5": "57a7886de8731acbed0a5e6b48cf79df",
+                        "url": "https:\/\/dl.humble.com\/artificialintelligencewithpython.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=da77870bffc05824a406652023300228",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "artificialintelligencewithpython",
+                        "fileName": "artificialintelligencewithpython.pdf"
+                    },
+                    {
+                        "fileSize": 23487803,
+                        "md5": "a932c8dee4d5eb9e9a2ea82f0abb4248",
+                        "url": "https:\/\/dl.humble.com\/pythonmachinelearning.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=75048e541ac7f2eb3ee989c266477609",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "pythonmachinelearning",
+                        "fileName": "pythonmachinelearning.mobi"
+                    },
+                    {
+                        "fileSize": 15764714,
+                        "md5": "7d8c4a1bf55f50393bc11b6128dc66e2",
+                        "url": "https:\/\/dl.humble.com\/pythonmachinelearning.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=fdc6bf15437439573677e7e2658793a7",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "pythonmachinelearning",
+                        "fileName": "pythonmachinelearning.epub"
+                    },
+                    {
+                        "fileSize": 16547651,
+                        "md5": "637923e46ba7f7911fd8c231c778f101",
+                        "url": "https:\/\/dl.humble.com\/pythonmachinelearning.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=fd9620e297a9882be25b4ada25197350",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "pythonmachinelearning",
+                        "fileName": "pythonmachinelearning.pdf"
+                    },
+                    {
+                        "fileSize": 10525075,
+                        "md5": "457c7c6bc61ef8e4c5aeb618516722d2",
+                        "url": "https:\/\/dl.humble.com\/pythonmicroservicesdevelopment.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=acbadfa96ccd40cb5e61210087d6499b",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "pythonmicroservicesdevelopment",
+                        "fileName": "pythonmicroservicesdevelopment.mobi"
+                    },
+                    {
+                        "fileSize": 4316903,
+                        "md5": "5f4cc206f532fa6c7ab457788c60c874",
+                        "url": "https:\/\/dl.humble.com\/pythonmicroservicesdevelopment.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=07a234c56143940ed11cba5a293f5d0c",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "pythonmicroservicesdevelopment",
+                        "fileName": "pythonmicroservicesdevelopment.epub"
+                    },
+                    {
+                        "fileSize": 5386931,
+                        "md5": "2ec28be7691dbc7672a2f338dca9858c",
+                        "url": "https:\/\/dl.humble.com\/pythonmicroservicesdevelopment.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=dae13aba098c2c8666c44648a1f507ad",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "pythonmicroservicesdevelopment",
+                        "fileName": "pythonmicroservicesdevelopment.pdf"
+                    },
+                    {
+                        "fileSize": 35033862,
+                        "md5": "f10d90b829ed25418b3ec8fb43e26ef1",
+                        "url": "https:\/\/dl.humble.com\/softwarearchitecturewithpython.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=84d9003186ab746d0505bd6f6c5359b5",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "softwarearchitecturewithpython",
+                        "fileName": "softwarearchitecturewithpython.mobi"
+                    },
+                    {
+                        "fileSize": 24738404,
+                        "md5": "573d456fbc47490164bc0badfd31a21d",
+                        "url": "https:\/\/dl.humble.com\/softwarearchitecturewithpython.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=f9b6feaff7eac9ed086a5982b816aa04",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "softwarearchitecturewithpython",
+                        "fileName": "softwarearchitecturewithpython.epub"
+                    },
+                    {
+                        "fileSize": 12368826,
+                        "md5": "c171c0873a2671ca40ac2661a32393db",
+                        "url": "https:\/\/dl.humble.com\/softwarearchitecturewithpython.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=14ef3b71b481a237271e6fe93c37eeaf",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "softwarearchitecturewithpython",
+                        "fileName": "softwarearchitecturewithpython.pdf"
+                    },
+                    {
+                        "fileSize": 7235690,
+                        "md5": "c13c3b53094eb71fdbbffd4488e4d046",
+                        "url": "https:\/\/dl.humble.com\/modernpythoncookbook.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=78ae5dc981f66b6c8c608429d767443b",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "modernpythoncookbook",
+                        "fileName": "modernpythoncookbook.mobi"
+                    },
+                    {
+                        "fileSize": 2708579,
+                        "md5": "9ee7f7caa36319a0a7b5d1ec334eb7d4",
+                        "url": "https:\/\/dl.humble.com\/modernpythoncookbook.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=a7cb61f6ba936468d72e2eace4f175d1",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "modernpythoncookbook",
+                        "fileName": "modernpythoncookbook.epub"
+                    },
+                    {
+                        "fileSize": 15261562,
+                        "md5": "c709271a5208c0eb30d355d16996d043",
+                        "url": "https:\/\/dl.humble.com\/modernpythoncookbook.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=376331e241e2a80820db0cbbf19ef634",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "modernpythoncookbook",
+                        "fileName": "modernpythoncookbook.pdf"
+                    },
+                    {
+                        "fileSize": 6557311,
+                        "md5": "033b72ac3fe74eddf1824064eeae9135",
+                        "url": "https:\/\/dl.humble.com\/pythonhighperformance.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=81eb9e97f240fe961864fca530491b92",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "pythonhighperformance",
+                        "fileName": "pythonhighperformance.mobi"
+                    },
+                    {
+                        "fileSize": 2595559,
+                        "md5": "1addb2a9efe5ad3854440b6307934d2f",
+                        "url": "https:\/\/dl.humble.com\/pythonhighperformance.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=3faf9f9f893138312bf6ef12e7109b82",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "pythonhighperformance",
+                        "fileName": "pythonhighperformance.epub"
+                    },
+                    {
+                        "fileSize": 5253204,
+                        "md5": "42aa6d69ea0ba0da69f2707114169528",
+                        "url": "https:\/\/dl.humble.com\/pythonhighperformance.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=f3f8bf44938c5c2ec5f955f45d85c76a",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "pythonhighperformance",
+                        "fileName": "pythonhighperformance.pdf"
+                    },
+                    {
+                        "fileSize": 19964747,
+                        "md5": "2df964d95ba290136913035e33af1104",
+                        "url": "https:\/\/dl.humble.com\/pythonguiprogrammingcookbook.mobi?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=fc385fb4deb96677c17ad882c0026f72",
+                        "platform": "ebook",
+                        "format": "mobi",
+                        "name": "pythonguiprogrammingcookbook",
+                        "fileName": "pythonguiprogrammingcookbook.mobi"
+                    },
+                    {
+                        "fileSize": 7092865,
+                        "md5": "e5188a0c5df8d4a62338ca0ef2b39cd5",
+                        "url": "https:\/\/dl.humble.com\/pythonguiprogrammingcookbook.epub?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=8db3d7e0e8bd06bf16b3cc2dfe8fdc10",
+                        "platform": "ebook",
+                        "format": "epub",
+                        "name": "pythonguiprogrammingcookbook",
+                        "fileName": "pythonguiprogrammingcookbook.epub"
+                    },
+                    {
+                        "fileSize": 9756485,
+                        "md5": "6e7630bd171abb3c4faef67b2df55a8b",
+                        "url": "https:\/\/dl.humble.com\/pythonguiprogrammingcookbook.pdf?gamekey=UP4Maybt3tFXpdC8&ttl=1516579567&t=65ba9b1486020bfc1f3f510e8475321a",
+                        "platform": "ebook",
+                        "format": "pdf",
+                        "name": "pythonguiprogrammingcookbook",
+                        "fileName": "pythonguiprogrammingcookbook.pdf"
+                    }
+                ]
+            }
+        ]
+    }
+}
