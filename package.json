@@ -8,7 +8,7 @@
         "build:prod": "npm run prebuild && webpack --env.production",
         "build:dev": "npm run prebuild && webpack --watch",
         "start:dev": "web-ext run --config-discovery=false --config web-ext-config.dev.js",
-        "package": "npm run buiild:prod && web-ext build --config-discovery=false --config web-ext-config.js",
+        "package": "npm run build:prod && web-ext build --config-discovery=false --config web-ext-config.js",
         "test": "jest"
     },
     "dependencies": {
