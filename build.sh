@@ -1,7 +1,4 @@
 #!/bin/bash
-echo $(printenv)
-nvm install
-npm ci
-npm ci --dev
+npm install
 npm run test
 npm run package
