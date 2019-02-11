@@ -5,17 +5,18 @@ import {
 import { handleMessage } from './message';
 import { handleBeforeRequest } from './request';
 
-if (process.env.NODE_ENV !== 'production') {
+let urls;
+if (process.env.NODE_ENV === 'production') {
     console.log('background started.');
-}
-
-const filter = {
-    urls: [
-        '*://localhost/humbundlr/api*',
+    urls = [
         '*://humblebundle.com/api*',
         '*://www.humblebundle.com/api*'
-    ]
-};
+    ];
+} else {
+    urls = ['*://localhost/api*']
+}
+
+const filter = {urls};
 const extraInfoSpec = ['blocking'];
 
 onBeforeWebRequest(handleBeforeRequest, filter, extraInfoSpec);

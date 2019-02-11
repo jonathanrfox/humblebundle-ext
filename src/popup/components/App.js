@@ -1,29 +1,25 @@
 import path from 'path';
 import React, { Component } from 'react';
 import MDSpinner from 'react-md-spinner';
-
 import {
     onMessage,
     removeMessageListener,
     sendMessage
 } from '../../browser';
-import { Types } from '../../common';
+import { Types } from '../../types';
 import { closeWindow } from '../../window';
-
 import { Center, Header, Main, Popup } from './styled/app';
-
-import ErrorView from './ErrorView';
+import Error from './Error';
 import Form from './Form';
 
 
 export default class App extends Component {
 
     CompFns = {
-        PopupErrorFn: () => <ErrorView/>,
+        PopupErrorFn: () => <Error/>,
         FormFn: (props = {}) => (
-            <Form title={props.human_name}
-                  machine_name={props.machine_name}
-                  data={props.platforms} />
+            <Form bundleName={props.bundleName}
+                  categories={props.categories} />
         ),
         SpinnerFn: () => <Center><MDSpinner/></Center>
     };
@@ -63,7 +59,7 @@ export default class App extends Component {
         return (
             <Popup>
               <Header>
-                <div>humbundlr</div>
+                <div>Humble Bundle</div>
                 <a onClick={closeWindow}>×</a>
               </Header>
               <Main>

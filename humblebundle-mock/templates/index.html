@@ -41,12 +41,12 @@
     </style>
   </head>
   <body>
-    <h1 style="text-align: center;">HumbleBundle Mock</h1>
+    <h1 style="text-align: center;">Humble Bundle Mock</h1>
     <div>
       <div id="circle"></div>
     </div>
     <script>
-      fetch('http://localhost:5000/humbundlr/api')
+      fetch('http://localhost:5000/api/v1/order')
       .then(function(resp) { return resp.json(); })
       .then(function(data) { console.log(data);  });
     </script>

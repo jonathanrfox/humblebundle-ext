@@ -1,38 +1,33 @@
 import React, { Component } from 'react';
-
 import { formatBytes } from '../utils';
-
-import {
-    Checkbox,
-    CheckboxItem,
-    CheckboxLabel
-} from './styled/checkbox';
+import * as checkbox from './styled/checkbox';
 
 
-export default class _CheckboxItem extends Component {
+export default class CheckboxItem extends Component {
 
-    static displayName = 'CheckboxItem';
     static propKeys = ['id', 'format', 'totalFileSize', 'checked'];
 
     shouldComponentUpdate(nextProps) {
-        for (const key of _CheckboxItem.propKeys)
-            if (nextProps[key] !== this.props[key])
+        for (const key of CheckboxItem.propKeys) {
+            if (nextProps[key] !== this.props[key]) {
                 return true;
+            }
+        }
         return false;
     }
 
     render() {
         const { onChange, id, checked, format, totalFileSize } = this.props;
         return (
-            <CheckboxItem>
-              <CheckboxLabel>
-                <Checkbox onChange={onChange}
-                          id={id}
-                          checked={checked} />
+            <checkbox.CheckboxItem>
+              <checkbox.CheckboxLabel>
+                <checkbox.Checkbox onChange={onChange}
+                                   id={id}
+                                   checked={checked} />
                 <span>{format}</span>
-              </CheckboxLabel>
+              </checkbox.CheckboxLabel>
               <span>{formatBytes(totalFileSize)}</span>
-            </CheckboxItem>
+            </checkbox.CheckboxItem>
         );
     }
 }

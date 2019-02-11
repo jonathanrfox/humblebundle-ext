@@ -1,29 +1,35 @@
-import { sendMessage } from '../../../browser';
-import { Button } from '../styled/buttons';
-import CheckboxGroup from '../CheckboxGroup';
-import Form from '../Form';
+import { sendMessage } from '../../browser';
+import { Types } from '../../types';
+import { Button } from './styled/buttons';
+import CheckboxGroup from './CheckboxGroup';
+import Form from './Form';
 
 
-jest.mock('../../../browser');
+jest.mock('../../browser');
+jest.mock('../../window');
 
 let props, form;
 
 beforeEach(() => {
     props = {
-        title: 'Form Title',
-        machine_name: 'mac',
-        data: {
-            ebook: [
-                {
-                    meta: [{
-                        id: "1"
-                    }]
-                }, {
-                    meta: [{
-                        id: "2"
-                    }]
+        bundleName: 'Bundle Name',
+        categories: {
+            ebook_epubmobipdf: {
+                platform: 'ebook',
+                count: 5,
+                productGroups: {
+                    epub: {id: 'abc', products: [1, 2]},
+                    mobi: {id: 'def', products: [3, 4]},
+                    pdf: {id: 'ghi', products: [5, 6]}
                 }
-            ]
+            },
+            ebook_pdf: {
+                platform: 'ebook',
+                count: 2,
+                productGroups: {
+                    pdf: {id: 'jkl', products: [7, 8]}
+                }
+            }
         }
     };
     form = shallow(<Form {...props} />);
@@ -37,8 +43,10 @@ test('Form state is setup properly', () => {
     expect(form.state()).toEqual({
         error: undefined,
         form: {
-            "1": false,
-            "2": false
+            abc: false,
+            def: false,
+            ghi: false,
+            jkl: false
         }
     });
 });
@@ -51,31 +59,37 @@ test('form renders 2 CheckboxGroups', () => {
 test('onChange triggers state change', () => {
     form.instance().onChange({
         target: {
-            id: "1"
+            id: 'abc'
         }
     });
     expect(form.state()).toEqual({
         error: undefined,
         form: {
-            "1": true,
-            "2": false
+            abc: true,
+            def: false,
+            ghi: false,
+            jkl: false
         }
     });
 });
 
 test('isChecked returns the correct boolean values', () => {
     const instance = form.instance();
-    expect(instance.isChecked("1")).toBe(false);
-    expect(instance.isChecked("2")).toBe(false);
+    expect(instance.isChecked('abc')).toBe(false);
+    expect(instance.isChecked('def')).toBe(false);
+    expect(instance.isChecked('ghi')).toBe(false);
+    expect(instance.isChecked('jkl')).toBe(false);
     form.setState({
         form: {
             ...form.state('form'),
-            "1": true
+            abc: true
         }
     });
     form.update();
-    expect(instance.isChecked("1")).toBe(true);
-    expect(instance.isChecked("2")).toBe(false);
+    expect(instance.isChecked('abc')).toBe(true);
+    expect(instance.isChecked('def')).toBe(false);
+    expect(instance.isChecked('ghi')).toBe(false);
+    expect(instance.isChecked('jkl')).toBe(false);
 });
 
 test('onSubmit sets error', () => {
@@ -89,11 +103,15 @@ test('onSubmit calls sendMessage', () => {
     form.setState({
         form: {
             ...form.state('form'),
-            "1": true
+            abc: true,
+            def: true
         }
     });
     form.simulate('submit', {
         preventDefault: jest.fn()
     });
-    expect(sendMessage).toHaveBeenCalled();
+    expect(sendMessage).toHaveBeenCalledWith({
+        payload: [1, 2, 3, 4],
+        type: Types.DOWNLOAD_REQUEST
+    });
 });

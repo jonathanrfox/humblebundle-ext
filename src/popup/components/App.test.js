@@ -1,20 +1,18 @@
 import MDSpinner from 'react-md-spinner';
-
 import {
     onMessage,
     removeMessageListener,
     sendMessage
-} from '../../../browser';
-import { Types } from '../../../common';
+} from '../../browser';
+import { Types } from '../../types';
+import App from './App';
+import Form from './Form';
+import Error from './Error';
 
-import App from '../App';
-import Form from '../Form';
-import ErrorView from '../ErrorView';
 
+jest.mock('../../browser');
 
-jest.mock('../../../browser');
-
-afterEach(() => {
+beforeEach(() => {
     jest.clearAllMocks();
 });
 
@@ -25,7 +23,7 @@ test('Initial App', () => {
     expect(wrapper.find(MDSpinner).length).toBe(1);
 });
 
-function componentRenderedWhenType(Component, type) {
+function componentRendersForType(Component, type) {
     const wrapper = shallow(<App />, {
         disableLifecycleMethods: true
     });
@@ -35,33 +33,21 @@ function componentRenderedWhenType(Component, type) {
 }
 
 test('App renders Form when FETCH_RESPONSE', () => {
-    const actual = componentRenderedWhenType(
-        Form,
-        Types.FETCH_RESPONSE
-    );
+    const actual = componentRendersForType(Form, Types.FETCH_RESPONSE);
     expect(actual).toBeTruthy();
 });
 
 test('App renders Form when STORAGE_CHANGE', () => {
-    const actual = componentRenderedWhenType(
-        Form,
-        Types.STORAGE_CHANGE
-    );
+    const actual = componentRendersForType(Form, Types.STORAGE_CHANGE);
     expect(actual).toBeTruthy();
 });
 
-test('App renders ErrorView when FETCH_ERROR', () => {
-    const actual = componentRenderedWhenType(
-        ErrorView,
-        Types.FETCH_ERROR
-    );
+test('App renders Error when FETCH_ERROR', () => {
+    const actual = componentRendersForType(Error, Types.FETCH_ERROR);
     expect(actual).toBeTruthy();
 });
 
 test('App renders Loader when BACKGROUND_ACK', () => {
-    const actual = componentRenderedWhenType(
-        MDSpinner,
-        Types.BACKGROUND_ACK
-    );
+    const actual = componentRendersForType(MDSpinner, Types.BACKGROUND_ACK);
     expect(actual).toBeTruthy();
 });

@@ -1,13 +1,19 @@
 {
     "manifest_version": 2,
-    "name": "humbundlr",
+    "name": "humblebundle-ext",
     "version": "0.1",
-    "description": "An extension for downloading items from humblebundle.",
+    "description": "An extension for downloading items from Humble Bundle.",
+    "homepage_url": "https://github.com/jrusty/humblebundle-ext",
+    "browser_specific_settings": {
+        "gecko": {
+            "strict_min_version": "59.0"
+        }
+    },
     "page_action": {
         "browser_style": false,
-        "default_title": "Humbundlr",
+        "default_title": "Open Humble Bundle extension",
         "show_matches": [
-            "*://localhost/humbundlr/downloads*",
+            "*://localhost/downloads*",
             "*://humblebundle.com/downloads*",
             "*://www.humblebundle.com/downloads*"
         ]
@@ -17,7 +23,7 @@
         "storage",
         "webRequest",
         "webRequestBlocking",
-        "*://localhost/humbundlr/downloads*",
+        "*://localhost/downloads*",
         "*://humblebundle.com/downloads*",
         "*://www.humblebundle.com/downloads*"
     ]

@@ -3,6 +3,7 @@ import {
     setLocalStorage,
     removeLocalStorage
 } from '../browser';
+import { Types } from '../types';
 
 
 class Storage {
@@ -27,4 +28,18 @@ export class InputStorage extends Storage {
     static clear() {
         return super.clear(this.name);
     }
+}
+
+export async function getStorageData({ sendResponse }) {
+    let payload, type;
+    const inputData = await InputStorage.get();
+
+    if (!inputData) {
+        type = Types.FETCH_ERROR
+        payload = { error: 'Data unavailable.'}
+    } else {
+        type = Types.FETCH_RESPONSE;
+        payload = inputData
+    }
+    sendResponse({ type, payload });
 }

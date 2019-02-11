@@ -1,20 +1,20 @@
-import CheckboxGroup from '../CheckboxGroup';
-import CheckboxItem from '../CheckboxItem';
+import * as checkbox from './styled/checkbox';
+import CheckboxGroup from './CheckboxGroup';
+import CheckboxItem from './CheckboxItem';
 
 
 let props, wrapper;
 
 beforeEach(() => {
     props = {
-        group: {
-            meta: [{
-                id: 1,
-                format: 'f',
+        platform: 'ebook',
+        count: 5,
+        productGroups: {
+            mobi: {
+                id: 'abc',
                 totalFileSize: 100
-            }],
-            products: [{}, {}]
+            }
         },
-        platform: 'platform',
         onChange: jest.fn().mockName('onChange'),
         isChecked: jest.fn().mockName('isChecked')
     }
@@ -30,6 +30,11 @@ test('1 CheckboxItem is rendered', () => {
     expect(items.length).toBe(1);
 });
 
-test('isChecked is called', () => {
-    expect(props.isChecked).toHaveBeenCalled();
+test('isChecked is called with id', () => {
+    expect(props.isChecked).toHaveBeenCalledWith('abc');
 });
+
+test('CheckboxGroupName is set correctly', () => {
+    const node = wrapper.find(checkbox.CheckboxGroupName);
+    expect(node.render().text()).toMatch('5 ebooks');
+})

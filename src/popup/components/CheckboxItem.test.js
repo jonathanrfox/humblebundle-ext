@@ -1,15 +1,15 @@
-import { formatBytes } from '../../utils';
-import { Checkbox } from '../styled/checkbox';
-import CheckboxItem from '../CheckboxItem';
+import { formatBytes } from '../utils';
+import { Checkbox } from './styled/checkbox';
+import CheckboxItem from './CheckboxItem';
 
-jest.mock('../../utils');
+jest.mock('../utils');
 
 let props, wrapper;
 
 beforeEach(() => {
     props = {
-        id: 1,
-        format: "f",
+        id: 'abc',
+        format: 'epub',
         totalFileSize: 100,
         checked: false,
         onChange: jest.fn()
@@ -21,7 +21,7 @@ afterEach(() => {
     jest.clearAllMocks();
 });
 
-test('formatBytes is called', () => {
+test('formatBytes is called with totalFileSize value', () => {
     expect(formatBytes)
         .toHaveBeenCalledWith(props.totalFileSize);
 });
@@ -34,14 +34,14 @@ test('onChange is called', () => {
 });
 
 test('CheckboxItem does not re-render w/ same props', () => {
-    let result = wrapper.instance().shouldComponentUpdate(props);
+    const result = wrapper.instance().shouldComponentUpdate(props);
     expect(result).toBeFalsy();
 });
 
 test('CheckboxItem does re-render w/ diff props', () => {
-    let result = wrapper.instance().shouldComponentUpdate({
+    const result = wrapper.instance().shouldComponentUpdate({
         ...props,
-        id: props.id + 1
+        id: 'def'
     });
     expect(result).toBeTruthy();
 });

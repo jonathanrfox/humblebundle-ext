@@ -1,5 +1,11 @@
+# files
 *~
-*.mp4
+*.log
+*.bk
+Vagrantfile
+
+# directories
+.vagrant/
 node_modules/
 dist/
-src/background/tests/
+web-ext-artifacts/

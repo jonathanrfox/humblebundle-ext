@@ -1,82 +1,58 @@
 import _ from 'lodash';
+import path from 'path';
 import shortid from 'shortid';
 
 
 shortid.characters('йцукенгшщзфывапролджэхъячсмитьбюЙЦУКЕНГШЩЗФЫВАПРОЛДЖЭХЪЯЧСМИТЬБЮ');
 
-function reshapeDownload({ filename, platform, name, md5, file_size, url }) {
-    let format = name === 'Download' ? 'zip' : name.toLowerCase();
+const getFormat = (x) => {
+    // videos have a name of 'Download', let's change it to zip
+    return x === 'Download' ? 'zip' : x.toLowerCase();
+};
+
+const restructureDownloads =
+      (outputBaseDir) =>
+      ({ machine_name: productName, downloads: downloadArray }) => {
+    // downloads is always an array with a single element
+    const { platform, download_struct: downloads } = downloadArray[0];
+    const products = downloads.map(download => {
+        const format = getFormat(download.name);
+        const filename = `${productName}.${format}`;
+        const filepath = path.join(outputBaseDir, platform, format, filename);
+        const url = download.url.web;
+        const filesize = download.file_size;
+        const md5 = download.md5;
+        return { format, filepath, url, filesize, md5 };
+    });
+    const availableFormats = _.map(products, 'format').sort().join('');
+    return { platform, products, availableFormats };
+};
+
+const parse = ({ product, subproducts }) => {
+    const { human_name: bundleName, machine_name: cleanBundleName } = product;
     return {
-        filename: `${filename}.${format}`,
-        name: filename,
-        url: url.web,
-        fileSize: file_size,
-        format,
-        platform,
-        md5
+        bundleName,
+        categories: _(subproducts)
+            .filter(x => x.downloads.length > 0)
+            .map(restructureDownloads(cleanBundleName))
+            .groupBy(o => `${o.platform}_${o.availableFormats}`)
+            .mapValues((values, key) => {
+                const [ platform, availableFormats ] = key.split('_');
+                const count = values.length;
+                const productGroups = _(values)
+                      .map('products')
+                      .flatten()
+                      .groupBy('format')
+                      .mapValues(products => ({
+                          id: shortid.generate(),
+                          totalFileSize: _.sumBy(products, 'filesize'),
+                          products
+                      }))
+                      .value()
+                return { platform, count, productGroups };
+            })
+            .value()
     };
-}
-
-const reshapeProduct = ({
-    machine_name: filename,
-    downloads: [{
-        platform,
-        download_struct: dl_s
-    }]
-}) => ({
-    platform,
-    downloads: dl_s.map(dl => reshapeDownload({ platform, filename, ...dl }))
-});
-
-function joinFormatKey({ downloads }) {
-    return _.map(downloads, 'format').sort().join();
-}
-
-function fileSizeReducer(acc, { downloads }) {
-    for (const { format, fileSize } of downloads)
-        acc[format].totalFileSize += fileSize;
-    return acc;
-}
-
-function metaReducer(acc, format) {
-    acc[format] = {
-        id: shortid.generate(),
-        totalFileSize: 0,
-        format
-    };
-    return acc;
-}
-
-function reshapeFormatGroups(group, joinedFormats) {
-    let metaInit = joinedFormats.split(',').reduce(metaReducer, {});
-    let meta = group.reduce(fileSizeReducer, metaInit);
-
-    return {
-        products: _(group)
-            .map('downloads')
-            .flatten()
-            .value(),
-        meta: Object.values(meta)
-    };
-}
-
-const reshapePlatformValue = value => _(value)
-    .groupBy(joinFormatKey)
-    .map(reshapeFormatGroups)
-    .value();
-
-const parse = ({
-    product: { human_name, machine_name },
-    subproducts: products
-}) => ({
-    machine_name,
-    human_name,
-    platforms: _(products)
-        .filter(product => product.downloads.length > 0)
-        .map(reshapeProduct)
-        .groupBy('platform')
-        .mapValues(reshapePlatformValue)
-        .value()
-});
+};
 
 export default { parse };

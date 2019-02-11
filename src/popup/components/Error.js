@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-
 import { sendMessage } from '../../browser';
-import { Types } from '../../common';
-
+import { Types } from '../../types';
 import { Text, Title } from './styled/app';
 import { Button, ButtonGroup } from './styled/buttons';
 
 
-export default class ErrorView extends Component {
+export default class Error extends Component {
 
     constructor() {
         super();

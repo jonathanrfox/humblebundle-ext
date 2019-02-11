@@ -17,8 +17,11 @@ export const Header = styled.header`
   > div {
     font-family: 'Pacifico', cursive;
     color: #CB272C;
-    text-transform: capitalize;
     text-align: center;
+
+    span {
+       font-family: 'Source Sans Pro';
+    }
   }
 
   > a {

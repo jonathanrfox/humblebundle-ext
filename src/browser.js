@@ -1,3 +1,4 @@
+import { sleep } from './utils';
 // browser helper functions
 
 export const sendMessage = (message) => {
@@ -48,6 +49,28 @@ export const getDownloadState = async (id) => {
     }
 };
 
+export const pollDownloadState = (id) => {
+    return new Promise(async (resolve) => {
+        while (true) {
+            const state = await getDownloadState(id);
+            if (state === "complete") {
+                resolve(true);
+                break;
+            } else if (state === "interrupted") {
+                resolve(false);
+                break;
+            } else {
+                await sleep(1);
+            }
+        }
+    });
+};
+
 export const reloadCurrentTab = () => {
     return browser.tabs.reload();
-}
+};
+
+export const decode = (data) => {
+    const decoder = new TextDecoder();
+    return decoder.decode(data, {stream: true});
+};
