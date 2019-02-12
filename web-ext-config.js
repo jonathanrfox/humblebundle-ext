@@ -1,3 +1,10 @@
 module.exports = {
-    sourceDir: './dist/'
+    sourceDir: './dist/',
+    run : {
+        firefox: '/usr/bin/firefox',
+        startUrl: ['http://localhost:5000/start', 'about:debugging#addons']
+    },
+    build: {
+        overwriteDest: true
+    }
 };

@@ -6,6 +6,7 @@ Vagrantfile
 
 # directories
 .vagrant/
+.venv/
 node_modules/
 dist/
 web-ext-artifacts/
